@@ -1,0 +1,5 @@
+tipos de post
+ID    | PostType
+1		Question
+2		Answer
+

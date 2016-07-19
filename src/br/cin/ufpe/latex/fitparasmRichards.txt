@@ -1,0 +1,24 @@
+egin{table}[h]
+\centering
+\caption{Fit parameters found by the algorithm of nonlinear model fitting using the Richards model.}
+\label{table:fit_richards_params}
+\begin{tabular}{l | c | c | c | c}
+\hline
+Language    & K      & r      & tm       & a                        \\ \hline
+C & 38244.64683 & 0.0172 & -748.70971 & $7.55794\times10^{-7}$  \\ 
+C++ & 78057.01751 & 0.01333 & -905.45746 & $1.33019\times10^{-6}$  \\ 
+C# & 14198.11434 & 0.05622 & 95.34465 & 0.99597  \\ 
+Java & 86338.48864 & 0.01966 & 32.14488 & 0.22482  \\ 
+Javascript & 10597.43035 & 0.07633 & 100.60155 & 1.76402  \\ 
+Matlab & 538.83732 & 0.10078 & 102.01095 & 1.35714  \\ 
+Objective-C & 1892.6387 & 0.02215 & -551.81782 & $1.01124\times10^{-6}$  \\ 
+Perl & 10300.70858 & 0.02203 & -594.01218 & $6.65717\times10^{-7}$  \\ 
+PHP & 63607.39703 & 0.01539 & -157.16526 & 0.01656  \\ 
+Python & 24785.95074 & 0.02118 & 68.53239 & 0.3852  \\ 
+Ruby & 1574.71732 & 0.16369 & 102.98895 & 4.53384  \\ 
+\hline
+\end{tabular}
+\end{table}
+
+ 
+ 
