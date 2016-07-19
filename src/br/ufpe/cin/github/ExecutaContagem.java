@@ -11,6 +11,11 @@ import br.ufpe.cin.dados.ContabilizarIndividuos;
 import br.ufpe.cin.dados.ContabilizarProjetos;
 import br.ufpe.cin.dados.LedorUnidadeInfeccao;
 
+/**
+ * Runs the count
+ * @author emanoelbarreiros
+ *
+ */
 public class ExecutaContagem {
 
 	public static void main(String[] args) throws IOException {
