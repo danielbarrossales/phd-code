@@ -13,7 +13,8 @@ public class AppendixFitParameters implements IAppendix {
 			+ "(Sourceforge, StackOverflow and GitHub). All time slices discussed in Chapter~\ref{chapter:results}. ";
 
 	public void build() throws IOException {
-		String arquivoSaida = "/Users/emanoel/Google Drive/workspace-doutorado/Doutorado/src/br/cin/ufpe/latex/fitparams2.txt";
+		//String arquivoSaida = "/Users/emanoel/Google Drive/workspace-doutorado/Doutorado/src/br/cin/ufpe/latex/fitparams2.txt";
+		String arquivoSaida = "C:\\Users\\emano\\Documents\\GitHub\\phd-code\\src\\br\\cin\\ufpe\\latex\\fitparams2.txt";
 
 		FileWriter fw = new FileWriter(arquivoSaida);
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -24,11 +25,15 @@ public class AppendixFitParameters implements IAppendix {
 				"ObjectiveC", "PHP", "Python", "R", "Ruby", "Rust", "Shell", "Swift" };
 		String[] linguagensPrettyPrinting = { "Assembly", "C", "C++", "C\\#", "Dart", "Go", "Java", "Javascript",
 				"Julia", "Objective-C", "PHP", "Python", "R", "Ruby", "Rust", "Shell", "Swift" };
-
+		
+		//String stackOverflow = buildFitParamsSection("StackOverflow", linguagensStackOverflow, linguagensPrettyPrinting,
+				//"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/stackoverflow_4/individuos/");
 		String stackOverflow = buildFitParamsSection("StackOverflow", linguagensStackOverflow, linguagensPrettyPrinting,
-				"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/stackoverflow_4/individuos/");
+				"C:\\Users\\emano\\Dropbox\\UFPE\\Doutorado\\Dados\\stackoverflow_4\\individuos\\");
+		//String github = buildFitParamsSection("GitHub", linguagensGitHub, linguagensPrettyPrinting,
+				//"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/github/ghtorrent/mathematica/programadores/");
 		String github = buildFitParamsSection("GitHub", linguagensGitHub, linguagensPrettyPrinting,
-				"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/github/ghtorrent/mathematica/programadores/");
+				"C:\\Users\\emano\\Dropbox\\UFPE\\Doutorado\\Dados\\github\\ghtorrent\\mathematica\\programadores");
 
 		bw.write(stackOverflow);
 		bw.write("\n\n\n");

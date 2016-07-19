@@ -13,7 +13,8 @@ public class AppendixResidualCorrection {
 			+ "(Sourceforge, StackOverflow and GitHub). All time slices discussed in Chapter~\ref{chapter:results}. ";
 
 	public void build() throws IOException {
-		String arquivoSaida = "/Users/emanoel/Google Drive/workspace-doutorado/Doutorado/src/br/cin/ufpe/latex/fitparams2.txt";
+		//String arquivoSaida = "/Users/emanoel/Google Drive/workspace-doutorado/Doutorado/src/br/cin/ufpe/latex/fitparams2.txt";
+		String arquivoSaida = "C:\\Users\\emano\\Documents\\GitHub\\phd-code\\src\\br\\cin\\ufpe\\latex\\residualCorrection.txt";
 
 		FileWriter fw = new FileWriter(arquivoSaida);
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -25,10 +26,14 @@ public class AppendixResidualCorrection {
 		String[] linguagensPrettyPrinting = { "Assembly", "C", "C++", "C\\#", "Dart", "Go", "Java", "Javascript",
 				"Julia", "Objective-C", "PHP", "Python", "R", "Ruby", "Rust", "Shell", "Swift" };
 
+		//String stackOverflow = buildFitParamsSection("StackOverflow", linguagensStackOverflow, linguagensPrettyPrinting,
+			//"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/stackoverflow_4/individuos/");
 		String stackOverflow = buildFitParamsSection("StackOverflow", linguagensStackOverflow, linguagensPrettyPrinting,
-				"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/stackoverflow_4/individuos/");
+				"C:\\Users\\emano\\Dropbox\\UFPE\\Doutorado\\Dados\\stackoverflow_4\\individuos\\");
+		//String github = buildFitParamsSection("GitHub", linguagensGitHub, linguagensPrettyPrinting,
+			//"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/github/ghtorrent/mathematica/programadores/");
 		String github = buildFitParamsSection("GitHub", linguagensGitHub, linguagensPrettyPrinting,
-				"/Users/emanoel/Dropbox/UFPE/Doutorado/Dados/github/ghtorrent/mathematica/programadores/");
+				"C:\\Users\\emano\\Dropbox\\UFPE\\Doutorado\\Dados\\github\\ghtorrent\\mathematica\\programadores");
 
 		bw.write(stackOverflow);
 		bw.write("\n\n\n");
@@ -40,13 +45,11 @@ public class AppendixResidualCorrection {
 	private String buildFitParamsSection(String fonteDados, String[] linguagens, String[] linguagensPrettyPrinting,
 			String diretorioArquivos) throws IOException {
 
-		// tabela de fit parameters para todas as linguagens (100% do dataset)
-		// pag 45 da proposta
-		// colunas Language, K, r, tm, a
 		String[] porcentagens = { "50", "60", "70", "80", "90", "100" };
 		String[] agrupamento = { "mes", "semana" };
 		String[] agrupamentoPrettyPrinting = { "month", "week" };
 		String[] agrupamentoPrettyPrintingCapital = { "Month", "Week" };
+		//String[] correctiob
 		String sufixofixoArquivoFitParamsSourceforge = "_fitParams.txt";
 
 		StringBuffer buf = new StringBuffer();

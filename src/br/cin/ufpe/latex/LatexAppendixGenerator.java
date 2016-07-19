@@ -15,10 +15,10 @@ public class LatexAppendixGenerator {
 	static DecimalFormat df = new DecimalFormat("########.#####");
 	
 	public static void main(String[] args) throws IOException {
-		fazerTabela1();
+		//fazerTabela1();
 		
 		AppendixFitParameters afp = new AppendixFitParameters();
-		//afp.build();
+		afp.build();
 		
 		//tabela de goodness of fit para todas as linguagens
 		//colunas Language, epsilon-statistic, p-value, Rejects H0?
