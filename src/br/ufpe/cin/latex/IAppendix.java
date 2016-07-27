@@ -1,4 +1,4 @@
-package br.cin.ufpe.latex;
+package br.ufpe.cin.latex;
 
 import java.io.IOException;
 
