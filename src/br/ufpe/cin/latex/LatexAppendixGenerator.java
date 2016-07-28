@@ -12,7 +12,7 @@ import br.ufpe.cin.dados.Util;
 
 public class LatexAppendixGenerator {
 	
-	static DecimalFormat df = new DecimalFormat("########.#####");
+	static DecimalFormat df = new DecimalFormat("########.######");
 	
 	public static void main(String[] args) throws IOException {
 		//fazerTabela1();
