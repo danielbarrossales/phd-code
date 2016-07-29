@@ -78,12 +78,10 @@ public class CreateTheBestAppendixYouHaveEverSeen {
 						if (!((languages[i][k].equals("Swift") || languages[i][k].equals("swift"))
 									&& (timeSlices[l].equals("80") || timeSlices[l].equals("70")
 											|| timeSlices[l].equals("60")))) {
-							bw.write("\\FloatBarrier\n\n");
 							bw.write(String.format(subsubsection, "Time slice " + timeSlices[l] + "\\%"));
 							
-							bw.write("\\begin{table}[h] \n");
-							bw.write("\\centering \n");
-							bw.write(String.format("\\caption{Fit parameters, $R^2$ and p-value for the original model and corrections (language %s, grouped by %s, %s\\%% of the dataset)} \n",linguagesPrettyPrinting[k], timeGroupingEnglish[j], timeSlices[l]));
+							bw.write("\\begin{center} \n");
+							bw.write(String.format("\\captionof{table}{Fit parameters, $R^2$ and p-value for the original model and corrections (language %s, grouped by %s, %s\\%% of the dataset)} \n",linguagesPrettyPrinting[k], timeGroupingEnglish[j], timeSlices[l]));
 							bw.write("\\label{my-label} \n");
 							bw.write("\\begin{tabular}{l|c|c|c|c|c|c} \n");
 							bw.write("\\hline\n");
@@ -160,7 +158,7 @@ public class CreateTheBestAppendixYouHaveEverSeen {
 									getR2("gaussianCorrected3-dataFull",getR2FilePath(paths[i], timeGrouping[j], languages[i][k], timeSlices[l])), 
 									pValue_4));
 							bw.write("\\end{tabular} \n");
-							bw.write("\\end{table} \n\n");
+							bw.write("\\end{center} \n\n");
 							
 							String language = null;
 							if (sources[i].equals("stackoverflow") && languages[i][k].equals("c#")) {
@@ -169,42 +167,41 @@ public class CreateTheBestAppendixYouHaveEverSeen {
 								language = languages[i][k];
 							}
 							
-							bw.write("\\begin{figure}[h]\n");
-							bw.write("\\centering\n");
+							bw.write("\\begin{center}\n");
 							bw.write(String.format("{\\includegraphics[width=\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_finalCorrectedGaussian.eps"));
 							bw.write(String.format(
-									"\\caption{Result after thir iteration of residual-based correction, for language %s, grouped by %s, time slice %s\\%%.}\n",
+									"\\captionof{figure}{Result after thir iteration of residual-based correction, for language %s, grouped by %s, time slice %s\\%%.}\n",
 									linguagesPrettyPrinting[k], timeGroupingEnglish[j], timeSlices[l]));
-							bw.write("\\end{figure}\n\n\n");
+							bw.write("\\end{center}\n\n");
 							
+							bw.write("\\FloatBarrier\n\n");
 							
-							
-							bw.write("\\begin{figure}[hb]\n");
+							bw.write("\\begin{figure}[t]\n");
 							bw.write("\\centering\n");
 							bw.write("\\subcaptionbox{Original model}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fitPlot.eps"));
 							bw.write("\\subcaptionbox{Original residual}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fittedGaussianResidual1.eps"));
 							bw.write("\\subcaptionbox{Correction result after first iteration}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fittedGaussianPartialResult1.eps"));
 							bw.write("\\subcaptionbox{Residual after the first correction}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fittedGaussianResidual2.eps"));
 							bw.write("\\subcaptionbox{Correction result after second iteration}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fittedGaussianPartialResult2.eps"));
 							bw.write("\\subcaptionbox{Residual after the second correction}\n");
-							bw.write(String.format("{\\includegraphics[width=0.4\\textwidth]{figures/%s/%s}}\n",
+							bw.write(String.format("{\\includegraphics[width=0.45\\textwidth]{figures/%s/%s}}\n",
 									sources[i] + "-" + timeGroupingEnglish[j],
 									language + timeSlices[l] + "_fittedGaussianResidual3.eps"));
 							bw.write(String.format(
@@ -212,8 +209,7 @@ public class CreateTheBestAppendixYouHaveEverSeen {
 									linguagesPrettyPrinting[k], timeGroupingEnglish[j], timeSlices[l]));
 							bw.write("\\end{figure}\n\n\n");			
 							
-							bw.write("\\clearpage \n");
-							bw.write("\\newpage \n\n\n");
+							bw.write("\\FloatBarrier\n\n\n");
 						}
 					}
 				}
