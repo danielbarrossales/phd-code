@@ -9,10 +9,10 @@ import java.util.Map;
 
 import org.joda.time.LocalDate;
 
-import br.ufpe.cin.dados.LedorUnidadeInfeccaoSinonimos;
-import br.ufpe.cin.dados.Linguagem;
-import br.ufpe.cin.dados.UnidadeInfeccao;
-import br.ufpe.cin.dados.Util;
+import br.ufpe.cin.data.LedorUnidadeInfeccaoSinonimos;
+import br.ufpe.cin.data.Linguagem;
+import br.ufpe.cin.data.UnidadeInfeccao;
+import br.ufpe.cin.data.Util;
 
 public class LedorStackoverflow implements LedorUnidadeInfeccaoSinonimos {
 	

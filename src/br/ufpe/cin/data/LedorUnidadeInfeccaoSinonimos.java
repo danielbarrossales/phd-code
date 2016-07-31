@@ -1,4 +1,4 @@
-package br.ufpe.cin.dados;
+package br.ufpe.cin.data;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

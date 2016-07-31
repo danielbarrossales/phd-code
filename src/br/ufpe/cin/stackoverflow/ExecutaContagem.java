@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import br.ufpe.cin.dados.ContabilizadorIndividuos;
-import br.ufpe.cin.dados.ContabilizarIndividuos;
-import br.ufpe.cin.dados.ContabilizarProjetos;
+import br.ufpe.cin.data.ContabilizadorIndividuos;
+import br.ufpe.cin.data.ContabilizarIndividuos;
+import br.ufpe.cin.data.ContabilizarProjetos;
 
 public class ExecutaContagem {
 

@@ -2,14 +2,14 @@ package br.ufpe.cin.github;
 
 import java.io.IOException;
 
-import br.ufpe.cin.dados.AcumulaDados;
-import br.ufpe.cin.dados.AcumulaDadosDia;
-import br.ufpe.cin.dados.AcumulaDadosMes;
-import br.ufpe.cin.dados.AcumulaDadosSemana;
-import br.ufpe.cin.dados.ContabilizadorIndividuos;
-import br.ufpe.cin.dados.ContabilizarIndividuos;
-import br.ufpe.cin.dados.ContabilizarProjetos;
-import br.ufpe.cin.dados.LedorUnidadeInfeccao;
+import br.ufpe.cin.data.AcumulaDados;
+import br.ufpe.cin.data.AcumulaDadosDia;
+import br.ufpe.cin.data.AcumulaDadosMes;
+import br.ufpe.cin.data.AcumulaDadosSemana;
+import br.ufpe.cin.data.ContabilizadorIndividuos;
+import br.ufpe.cin.data.ContabilizarIndividuos;
+import br.ufpe.cin.data.ContabilizarProjetos;
+import br.ufpe.cin.data.LedorUnidadeInfeccao;
 
 /**
  * Runs the count

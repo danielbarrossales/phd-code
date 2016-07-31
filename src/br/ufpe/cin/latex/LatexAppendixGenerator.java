@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-import br.ufpe.cin.dados.Util;
+import br.ufpe.cin.data.Util;
 
 public class LatexAppendixGenerator {
 	

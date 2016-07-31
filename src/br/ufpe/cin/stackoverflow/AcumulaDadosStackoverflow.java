@@ -13,12 +13,12 @@ import java.util.Set;
 
 import org.joda.time.LocalDate;
 
-import br.ufpe.cin.dados.ContabilizadorIndividuos;
-import br.ufpe.cin.dados.Contagem;
-import br.ufpe.cin.dados.LedorUnidadeInfeccao;
-import br.ufpe.cin.dados.LedorUnidadeInfeccaoSinonimos;
-import br.ufpe.cin.dados.UnidadeInfeccao;
-import br.ufpe.cin.dados.Util;
+import br.ufpe.cin.data.ContabilizadorIndividuos;
+import br.ufpe.cin.data.Contagem;
+import br.ufpe.cin.data.LedorUnidadeInfeccao;
+import br.ufpe.cin.data.LedorUnidadeInfeccaoSinonimos;
+import br.ufpe.cin.data.UnidadeInfeccao;
+import br.ufpe.cin.data.Util;
 
 public abstract class AcumulaDadosStackoverflow {
 	

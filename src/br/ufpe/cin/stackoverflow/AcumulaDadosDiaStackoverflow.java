@@ -2,8 +2,8 @@ package br.ufpe.cin.stackoverflow;
 
 import org.joda.time.LocalDate;
 
-import br.ufpe.cin.dados.ContabilizadorIndividuos;
-import br.ufpe.cin.dados.LedorUnidadeInfeccaoSinonimos;
+import br.ufpe.cin.data.ContabilizadorIndividuos;
+import br.ufpe.cin.data.LedorUnidadeInfeccaoSinonimos;
 
 public class AcumulaDadosDiaStackoverflow extends AcumulaDadosStackoverflow {
 	
