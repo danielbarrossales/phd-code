@@ -88,7 +88,7 @@ public class CreateTheBestAppendixYouHaveEverSeen {
 							bw.write(
 									"\\multicolumn{1}{c|}{\\multirow{2}{*}{Model}} & \\multicolumn{4}{c|}{\\begin{tabular}[c]{@{}c@{}}Fit Parameters\\\\ (original/correction)\\end{tabular}} & \\multicolumn{1}{c|}{\\multirow{2}{*}{$R^2$}} & \\multicolumn{1}{c}{\\multirow{2}{*}{\\begin{tabular}[c]{@{}c@{}}SE\\\\ p-value\\end{tabular}}} \\\\ \\cline{2-5} \n");
 							bw.write(
-									"\\multicolumn{1}{c|}{} & K/a & \\multicolumn{1}{c|}{r/f} & \\multicolumn{1}{c|}{$t_m$/q} & \\multicolumn{1}{c|}{a/s} & \\multicolumn{1}{c|}{} & \\multicolumn{1}{c}{} \\\\ \\hline \n");
+									"\\multicolumn{1}{c|}{} & K/$\\beta$ & \\multicolumn{1}{c|}{r/$\\omega$} & \\multicolumn{1}{c|}{$t_m$/$\\xi$} & \\multicolumn{1}{c|}{a/$\\delta$} & \\multicolumn{1}{c|}{} & \\multicolumn{1}{c}{} \\\\ \\hline \n");
 
 							String pValue_1 = null;
 							String pValue_2 = null;
