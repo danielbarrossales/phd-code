@@ -59,7 +59,7 @@ public class LatexAppendixGenerator {
 		String linha = null;
 		String[] linhaQuebrada = null;
 
-		Util.imprimir("Iniciando leitura do arquivo de fit params...");
+		Util.print("Iniciando leitura do arquivo de fit params...");
 		
 		StringBuffer buf = new StringBuffer();
 		buf.append(cabecalhoRichards);

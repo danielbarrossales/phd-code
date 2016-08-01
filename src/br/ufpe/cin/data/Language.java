@@ -1,6 +1,6 @@
 package br.ufpe.cin.data;
 
-public class Linguagem {
+public class Language {
 	
 	public static int JAVA = 0;
 	
@@ -36,7 +36,7 @@ public class Linguagem {
 	
 	public static int RUST = 16;
 	
-	public static int obterCodigoLinguagem(String linguagem) {
+	public static int getLanguageCode(String linguagem) {
 		switch(linguagem) {
 			case "Java": 
 			case "java": return JAVA;
